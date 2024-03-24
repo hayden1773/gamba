@@ -76,15 +76,16 @@ const spin = () => {
     const symbols = [];
     for (const [symbol, count] of Object.entries(SYMBOLS_COUNT)) {
         // console.log(symbol,count);
-        for (let i = 0; i < count;i++){
+        for (let i = 0; i < count; i++) {
             symbols.push(symbol);
         }
 
     }
     // console.log(symbols);
     const reels = [[], [], []];
-    for (let i = 0; i < COLS; i++){
-        for(let j = 0; j < ROWS; j++){
+    for (let i = 0; i < COLS; i++) {
+        const reelSymbols = [...symbols];
+        for (let j = 0; j < ROWS; j++) {
             
         }
 
